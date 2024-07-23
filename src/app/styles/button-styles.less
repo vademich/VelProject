@@ -1,0 +1,68 @@
+@import 'variables.less';
+
+.parallelogram {
+    width: 200px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: @Gilroy;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    transform: skew(170deg);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.parallelogram-shadowed {
+    border-left: @green-primary 10px solid;
+    background-color: rgba(@green-primary, 0.4);
+    color: @primary-white;
+}
+
+.parallelogram-shadowed:hover {
+    color: @primary-black;
+}
+
+.parallelogram-empty {
+    border: 2px solid @green-primary;
+    color: @green-primary;
+}
+
+.parallelogram-empty:hover {
+    color: @primary-black;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, @green-primary 0%, @green-primary 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+    transition: left 0.3s;
+}
+
+.wrapper:hover:before {
+    left: 0;
+}
+
+.parallelogram {
+    position: relative;
+}
+
+.parallelogram p {
+    position: relative;
+}

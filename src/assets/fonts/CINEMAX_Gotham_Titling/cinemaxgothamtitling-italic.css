@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'CINEMAXGothamTitling-Italic';
+    src: url('./fonts/cinemaxgothamtitling-italic.ttf') format("truetype"),
+    url('./fonts/cinemaxgothamtitling-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

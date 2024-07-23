@@ -1,0 +1,141 @@
+@import '../../styles/variables.less';
+@import '../../styles/typography.less';
+
+.page {
+    overflow: clip;
+    margin: 0 auto;
+    max-width: calc(1440px - 2*72px);
+
+    background-color: @primary-black;
+
+    @media (min-width: @md) {
+        padding: 0 72px;
+        width: calc(100vw - 144px);
+    }
+
+    @media (max-width: (@md - 1px)) {
+        padding: 0 24px;
+        width: calc(100vw - 48px);
+    }
+}
+
+.title {
+    font-family: @CINEMAX;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: @primary-white;
+}
+
+.title {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: @xl) {
+        flex-direction: column;
+    }
+}
+
+.group:last-of-type {
+    @media (min-width: @xl) {
+        align-items: center;
+    }
+}
+
+.group:last-of-type {
+    padding-bottom: 80px;
+}
+
+.group:last-of-type *:not(a) {
+    margin-top: 24px;
+}
+
+.block {
+    width: 220px;
+
+    @media (max-width: @xl) {
+        margin-top: 24px;
+    }
+}
+
+.block__title {
+    font-family: @Gilroy;
+    font-size: 14px;
+    color: @green-primary;
+}
+
+.block__value {
+    font-family: @Gilroy;
+    font-size: 24px;
+    color: @primary-white;
+    font-weight: 700;
+}
+
+.socials {
+    margin-top: 14px;
+    width: 26px;
+    height: 26px;
+}
+
+.ig,
+.yt {
+    margin-left: 24px;
+}
+
+a img {
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+hr {
+    opacity: 0.2;
+    margin-top: 32px;
+    margin-bottom: 18px;
+}
+
+img.logo {
+    width: 88px;
+    height: 29px;
+    object-fit: cover;
+}
+
+.descr {
+    width: 133px;
+
+    font-family: @Gilroy;
+    font-size: 14px;
+    color: @primary-white;
+}
+
+a.text-link {
+    font-family: @Gilroy;
+    font-size: 18px;
+    color: @primary-white;
+    text-wrap: nowrap;
+    @media (max-width: (@md - 1px)) {
+        margin-top: 24px;
+    }
+}
+
+a.text-link:not(:first-of-type) {
+    @media (min-width: @md) {
+        margin-left: 66px;
+    }
+}
+
+.footer-menu {
+    @media (max-width: (@md - 1px)) {
+        display: flex;
+        flex-direction: column;
+    }
+}

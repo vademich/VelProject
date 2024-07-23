@@ -1,0 +1,92 @@
+@import '../../../styles/variables.less';
+@import '../../../styles/typography.less';
+
+
+img.image-call {
+    object-fit: cover;
+    object-position: left bottom;
+    width: 100vw;
+    height: 647px;
+
+    @media (min-width: @lg) {
+        max-width: 719px;
+        width: 50vw;
+    }
+
+    @media (min-width: @max) {
+        max-width: 819px;
+        width: 50vw;
+    }
+}
+
+.lead-form {
+    display: flex;
+    flex-direction: column;
+
+    background-color: @primary-white;
+}
+
+input {
+    background: #F5F6FB;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: none;
+    width: calc(100% - 32px);
+    max-width: 518px;
+    color: @primary-black;
+}
+
+input:focus-visible {
+    outline: none;
+    border-bottom-color: @green-primary;
+}
+
+.form-block {
+    max-width: 518px;
+    margin: 24px;
+}
+
+.title {
+    color: @primary-black;
+    font-family: @Gilroy;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+p.title {
+    margin-bottom: 24px;
+}
+
+.text {
+    color: @primary-black;
+    font-family: @Gilroy;
+    font-size: 18px;
+}
+
+p.text {
+    margin-bottom: 13px;
+}
+
+.telephone {
+    font-weight: 600;
+}
+
+button.button {
+    margin: 24px 0;
+    height: 49px;
+    background-color: #E2FF99;
+    border: none;
+
+    font-family: @Gilroy;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-style: italic;
+    cursor: pointer;
+}
+
+button.button:hover {
+    background-color: @green-primary;
+}

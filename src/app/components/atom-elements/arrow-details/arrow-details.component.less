@@ -1,0 +1,28 @@
+@import '../../../styles/variables.less';
+
+.details {
+    font-family: @Gilroy;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    color: @primary-black;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 116px;
+    justify-content: space-between;
+
+    transition: all 0.2s ease-in-out;
+}
+.details:hover {
+    width: 120px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../../../assets/images/arrows/black-1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}

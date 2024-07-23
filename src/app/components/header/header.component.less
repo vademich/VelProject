@@ -1,0 +1,23 @@
+@import '../../styles/variables.less';
+@import '../../styles/typography.less';
+
+@media (min-width: @xl) {
+    .pc-v {
+        display: block;
+    }
+
+    .mob-v {
+        display: none;
+    }
+}
+
+@media (max-width: (@xl - 1px)) {
+    .pc-v {
+        display: none;
+    }
+
+    .mob-v {
+        display: block;
+        height: 40px;
+    }
+}

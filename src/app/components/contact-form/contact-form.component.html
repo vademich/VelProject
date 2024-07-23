@@ -1,0 +1,32 @@
+<div class="page">
+    <img src="../../../assets/images/image_call.jpeg" alt="велосипед" class="image-call">
+    <div class="form-block">
+        <p class="title">остались вопросы</p>
+        <p class="text">Оставьте, пожалуйста, заявку и мы обязательно перезвоним
+            Вам и ответим на все ваши вопросы.</p>
+        <p class="text">Или можете позвонить нам по телефону <span class="green-primary no-wrap">8 9060 963 963</span>
+            в удобное для Вас время с 9 до 21.</p>
+        <form #myForm="ngForm" class="lead-form">
+
+            <mat-form-field>
+                <input matInput placeholder="Ваше имя" [(ngModel)]="name" name="name" required />
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Ваш телефон" [(ngModel)]="tel" name="tel" required />
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Комментарий" [(ngModel)]="message" name="message" />
+            </mat-form-field>
+
+            <re-captcha id="recaptcha" name="recaptcha" #recaptcha="ngModel" [(ngModel)]="token" required
+                [class.is-invalid]="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)"></re-captcha>
+            <div *ngIf="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)" class="invalid-feedback">
+                <div *ngIf="recaptcha.errors?.['required']">This field is required.</div>
+            </div>
+
+            <app-button-type-1 [buttonText]="'Оставить заявку'" (mousedown)="sendMail(myForm)"></app-button-type-1>
+        </form>
+    </div>
+</div>

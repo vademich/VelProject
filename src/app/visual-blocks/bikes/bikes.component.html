@@ -1,0 +1,15 @@
+<div class="text-block">
+    <div class="title"><span class="green-primary">Выбери</span> свой <img src="../../../assets/images/vel-logo-white.svg" class="vel-logo"></div>
+    <div class="text">Cube - это одни из лучших велосипедов в мире.
+        <br>Cube - это Ваш новый друг в велопутешествии.
+    </div>
+</div>
+
+<div class="page">
+    <swiper-container #swiper1 class="mySwiper" style="--swiper-pagination-color: #B6FF00;">
+        <swiper-slide *ngFor="let slide of slides">
+            <div class="hero">{{slide.hero}}</div>
+            <img [src]="slide.image" />
+        </swiper-slide>
+    </swiper-container>
+</div>

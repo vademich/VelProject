@@ -1,0 +1,68 @@
+@import '../../styles/variables.less';
+@import '../../styles/typography.less';
+
+@porsche-panton: #DF9D5B;
+@banner-height: 853px;
+
+.page {
+    margin: 0 auto;
+    max-width: calc(1440px - 2*72px);
+    height: @banner-height;
+
+    background-color: @porsche-panton;
+    background-image: url(../../../assets/images/image_start.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+
+    @media (min-width: @md) {
+        padding: 0 72px;
+        width: calc(100vw - 144px);
+    }
+
+    @media (max-width: (@md - 1px)) {
+        padding: 0 24px;
+        width: calc(100vw - 48px);
+    }
+}
+
+.socials {
+    margin-left: 24px;
+    width: 26px;
+    height: 26px;
+}
+
+a img {
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.socials-line {
+    position: absolute;
+    
+    @media (min-height: (@banner-height + 1px)) and (max-width: @max) {
+        // bottom: calc(100vh - (@banner-height + 1px) + 24px);
+        right: 24px;
+    }
+
+    @media (min-height: (@banner-height + 1px)) and (min-width: (@max + 1px)) {
+        // bottom: calc(100vh - (@banner-height + 1px) + 24px);
+        right: calc((100vw - @max) / 2 + 24px);
+    }
+
+    @media (max-height: @banner-height) and (max-width: @max) {
+        // bottom: 24px;
+        right: 24px;
+    }
+
+    @media (max-height: @banner-height) and (min-width: (@max + 1px)) {
+        // bottom: 24px;
+        right: calc((100vw - @max) / 2 + 24px);
+    }
+    
+    top: calc(@banner-height - 45px);
+}

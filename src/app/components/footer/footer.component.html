@@ -1,0 +1,44 @@
+<div class="page">
+    <div class="title">Контакты</div>
+    <div class="group">
+        <div class="block">
+            <div class="block__title">телефон</div>
+            <div class="block__value">8 9060 963 963</div>
+        </div>
+        <div class="block">
+            <div class="block__title">адрес офиса</div>
+            <div class="block__value">г. Воронеж,
+                ул. Дорожная 46</div>
+        </div>
+        <div class="block">
+            <div class="block__title">почта</div>
+            <div class="block__value">{{mail}}</div>
+        </div>
+        <div class="row socials-line">
+            <!-- <a class="socials tg" href="tg">
+                <img src="../../../../assets/images/socials/telegram.svg">
+            </a>
+            <a class="socials ig" href="ig">
+                <img src="../../../../assets/images/socials/instagram.svg">
+            </a> -->
+            <a class="socials yt" href="https://vk.com/vel.travel">
+                <img src="../../../../assets/images/socials/vk.svg">
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="group">
+        <div class="row">
+            <a href="#"><img src="../../../../assets/images/vel-logo-white.svg" alt="vel" class="logo"></a>
+            <div class="descr">Лучший велопроект
+                в России</div>
+        </div>
+        <nav class="footer-menu">
+            <a href="#about" class="text-link">О нас</a>
+            <a href="#bicycles" class="text-link">Велосипеды</a>
+            <a href="#services" class="text-link">Услуги</a>
+            <a href="#contacts" class="text-link">Контакты</a>
+        </nav>
+        <app-button-type-1 [buttonText]="'Прокатиться'" (mousedown)="openDialog()"></app-button-type-1>
+    </div>
+</div>

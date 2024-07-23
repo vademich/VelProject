@@ -1,0 +1,75 @@
+@import '../../styles/variables.less';
+
+.page {
+    display: flex;
+    max-width: calc(1440px);
+    margin: 0 auto;
+
+    @media (max-width: @lg) {
+        flex-direction: column;
+    }
+}
+
+.title {
+    font-family: @CINEMAX;
+    font-size: 40px;
+    color: @green-primary;
+    text-transform: uppercase;
+
+    margin-top: 74px;
+}
+
+.subtitle {
+    font-family: @Gilroy;
+    font-size: 20px;
+    color: @primary-white;
+    font-weight: 500;
+
+    margin-top: 24px;
+}
+
+.list {
+    font-family: @Gilroy;
+    font-size: 20px;
+    color: @primary-white;
+    font-weight: 600;
+}
+
+.ps {
+    font-family: @Gilroy;
+    font-size: 16px;
+    color: @primary-white;
+    font-weight: 500;
+
+    margin-top: 8px;
+    margin-bottom: 74px;
+}
+
+li {
+    color: greenyellow;
+    margin-bottom: 16px;
+}
+
+.text-block {
+    width: 100%;
+    @media (max-width: @max) {
+        width: 50%;
+    }
+    @media (min-width: @md) {
+        padding: 0 72px;
+    }
+
+    @media (max-width: (@md - 1px)) {
+        padding: 0 24px;
+    }
+    @media (max-width: @lg) {
+        width: fit-content;
+    }
+}
+.image {
+    width: 100%;
+    object-fit: cover;
+    @media (max-width: @max) and (min-width: (@lg + 1px)) {
+        width: 50%;
+    }
+}

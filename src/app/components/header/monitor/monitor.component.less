@@ -1,0 +1,76 @@
+@import '../../../styles/variables.less';
+@import '../../../styles/typography.less';
+
+header {
+    display: flex;
+
+    position: fixed;
+    z-index: 100;
+    top: 0;
+
+    margin-bottom: -80px;
+
+    background: #1E1E1E;
+
+    @media (max-width: (@max - 1px)) {
+        width: calc(100vw - 72px*2);
+        padding: 0 72px;
+    }
+
+    @media (min-width: @max) {
+        width: calc(100vw - 144px*2);
+        padding: 0 144px;
+
+        max-width: 1152px;
+        padding: 0 calc((100vw - 1440px)/2 + 144px);
+    }
+
+    @media (min-width: (@lg)) {
+        height: 80px;
+    }
+}
+
+.heading {
+    font-family: @CINEMAX;
+    font-size: 18px;
+    color: @primary-white;
+    text-transform: uppercase;
+}
+
+img.logo {
+    object-position: center;
+    align-self: center;
+    display: flex;
+
+    @media (min-width: (@lg)) {
+        width: 121px;
+        height: 54px;
+    }
+}
+
+a {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-self: center;
+    margin: 0 100px;
+}
+
+.icons-line {
+    display: flex;
+    align-self: center;
+}
+
+img.icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.icon {
+    margin-left: 24px;
+}

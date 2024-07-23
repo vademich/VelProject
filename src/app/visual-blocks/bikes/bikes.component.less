@@ -1,0 +1,125 @@
+@import '../../styles/variables.less';
+
+.page {
+    overflow: clip;
+    margin: 0 auto;
+    max-width: calc(1440px - 2*72px);
+
+    background-color: @primary-white;
+
+    @media (min-width: @md) {
+        padding: 0 72px;
+        padding-bottom: 74px;
+        width: calc(100vw - 144px);
+    }
+
+    @media (max-width: (@md - 1px)) {
+        padding: 0 24px;
+        padding-bottom: 28px;
+        width: calc(100vw - 48px);
+    }
+}
+
+.text-block {
+    overflow: clip;
+    margin: 0 auto;
+    max-width: calc(1440px - 2*72px);
+
+    background-color: @primary-white;
+
+    @media (min-width: @md) {
+        padding: 0 72px;
+        width: calc(100vw - 144px);
+    }
+
+    @media (max-width: (@md - 1px)) {
+        padding: 0 24px;
+        width: calc(100vw - 48px);
+    }
+    background-color: @primary-black;
+
+    height: 198px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.title {
+    color: @primary-white;
+    font-family: @CINEMAX;
+    text-transform: uppercase;
+    @media (min-width: @md) {
+        font-size: 40px;
+    }
+
+    @media (max-width: (@md - 1px)) {
+        font-size: 28px;
+    }
+}
+.text {
+    color: @primary-white;
+    font-family: @Gilroy;
+    @media (min-width: @md) {
+        font-size: 24px;
+    }
+
+    @media (max-width: (@md - 1px)) {
+        font-size: 18px;
+    }
+}
+.green-primary {
+    color: @green-primary;
+}
+img.vel-logo {
+    position: relative;
+    @media (min-width: @md) {
+        height: 51px;
+        top: 12px;
+    }
+
+    @media (max-width: (@md - 1px)) {
+        height: 38px;
+        top: 9px;
+    }
+}
+.hero {
+    font-family: @CINEMAX;
+    color: @primary-black;
+    opacity: 0.3;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    left: 4px;
+    padding-top: 40px;
+    @media (min-width: @md) {
+        font-size: 96px;
+    }
+
+    @media (max-width: (@md - 1px)) {
+        font-size: 40px;
+    }
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    object-fit: contain;
+    max-height: 470px;
+    height: 70vw;
+    width: 100%;
+}

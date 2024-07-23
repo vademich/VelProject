@@ -1,0 +1,23 @@
+<header>
+    <a href="#"><img src="../../../../assets/images/vel_logo_light.svg" alt="vel" class="logo"></a>
+    <div class="header-icons-line no-wrap">
+        <a><img src="../../../../assets/images/icons/icon_phone.svg" alt="phone" class="icon-phone"></a>
+        <div class="icon-menu" (mousedown)="menuShowHide(0)">
+            <div class="line1" [@menuclick]="menuClicked ? 'line1-expand' : 'line1-collapse'"></div>
+            <div class="line2" [@menuclick]="menuClicked ? 'line2-expand' : 'line2-collapse'"></div>
+            <div class="line3" [@menuclick]="menuClicked ? 'line3-expand' : 'line3-collapse'"></div>
+        </div>
+    </div>
+</header>
+
+<nav [@menuclick]="menuClicked ? 'expand' : 'collapse'">
+    <a href="#about" class="heading" (mousedown)="menuShowHide(500)">О нас</a>
+    <a href="#bicycles" class="heading" (mousedown)="menuShowHide(500)">Велосипеды</a>
+    <!-- <a href="#services" class="heading" (mousedown)="menuShowHide(500)">Услуги</a> -->
+    <a href="#contacts" class="heading" (mousedown)="menuShowHide(500)">Контакты</a>
+    <div class="icons-line no-wrap">
+        <!-- <a><img src="../../../../assets/images/icons/icon_shop.svg" alt="" class="icon shop"></a> -->
+        <!-- <a><img src="../../../../assets/images/icons/icon_user.svg" alt="" class="icon user"></a> -->
+        <a href="tel:8 9060 963 963"><img src="../../../../assets/images/icons/icon_phone.svg" alt="" class="icon phone"></a>
+    </div>
+</nav>

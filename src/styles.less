@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'normalize.css';
+@import 'app/styles/variables.less';
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: @primary-black;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+    cursor: pointer;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: @Gilroy, Roboto, "Helvetica Neue", sans-serif;
+}
+
+app-button-type-1,
+app-button-type-2 {
+    width: fit-content;
+    display: block;
+}

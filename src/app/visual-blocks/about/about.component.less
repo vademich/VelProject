@@ -1,0 +1,172 @@
+@import '../../styles/variables.less';
+@import '../../styles/typography.less';
+
+@media (max-width: 1439px) {
+    .more-1440px {
+        display: none;
+    }
+}
+@media (min-width: 1440px) {
+    .less-1439px {
+        display: none;
+    }
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100vw;
+    background: linear-gradient(180deg, #88ADD4 0%, #BCD2EA 39.63%);
+}
+
+.container {
+    display: flex;
+
+    @media (max-width: 1079px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 1080px) {
+        flex-wrap: wrap;
+    }
+}
+
+.container-block {
+    @media (min-width: 720px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 1080px) {
+        width: 720px;
+        height: 720px;
+        background: url(../../../assets/images/two_cyclists.jpg);
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+}
+
+.container-block-bicycle {
+    display: flex;
+
+    @media (max-width: 719px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 1080px) {
+        flex-direction: column;
+        width: calc(100vw - 720px);
+        max-width: 720px;
+    }
+
+    @media (min-width: 1440px) {
+        flex-direction: row;
+    }
+}
+
+.container-block-tracks {
+    display: flex;
+
+    @media (max-width: 719px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 720px) {
+        flex-direction: row-reverse;
+    }
+
+    @media (min-width: 1440px) {
+        flex-direction: row-reverse;
+    }
+}
+
+.block-text,
+.block-info {
+    height: 360px;
+}
+
+.block-bg-white {
+    background-color: @primary-white;
+}
+
+.block-bg-green {
+    background-color: @green-primary;
+    max-width: 720px;
+
+    @media (min-width: 1080px) and (max-width: 1439px) {
+        width: 720px;
+        min-width: 720px;
+    }
+
+    @media (min-width: 1440px) {
+        width: 360px;
+    }
+}
+
+.block-info-margin {
+    margin-top: 48px;
+    margin-left: 40px;
+    margin-right: 19px;
+}
+
+.block-text-text {
+    font-family: @Gilroy;
+    font-size: 16px;
+    color: @primary-black;
+    margin-top: 24px;
+    margin-bottom: 42px;
+    min-height: 150px;
+}
+
+.block-empty {
+    @media (min-width: 360px) and (max-width: 719px) {
+        height: 100vw;
+        background: url(../../../assets/images/two_cyclists.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @media (min-width: 720px) and (max-width: 1079px) {
+        width: 360px;
+        height: 360px;
+        background: url(../../../assets/images/two_cyclists.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.block-image {
+    height: 360px;
+    width: 100%;
+    min-width: 360px;
+    background-position: center;
+    background-size: cover;
+}
+
+.block-image-bicycle {
+    background-image: url(../../../assets/images/bicycle-block.jpg);
+}
+
+.block-image-cyclist {
+    background-image: url(../../../assets/images/cyclist-block.jpg);
+
+    @media (min-width: 1080px) {
+        width: calc(100vw - 720px);
+        max-width: 720px;
+    }
+
+    @media (min-width: 1440px) {
+        width: 360px;
+    }
+}
+
+.block-title {
+    font-family: @CINEMAX;
+    font-size: 32px;
+    line-height: 30.4px;
+    color: @primary-black;
+    text-transform: uppercase;
+}

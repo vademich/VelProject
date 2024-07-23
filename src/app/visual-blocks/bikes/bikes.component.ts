@@ -24,8 +24,8 @@ export class BikesComponent implements OnInit, AfterViewInit {
         this.routeSub = this.route.params.subscribe(() => {
             this.slides = [
                 {
-                    hero: 'black panther',
-                    image: '../../../assets/images/marvels/black-panther.png'
+                    hero: 'master wong',
+                    image: '../../../assets/images/marvels/master-wong.png'
                 },
                 {
                     hero: 'captain marvel',
@@ -40,8 +40,8 @@ export class BikesComponent implements OnInit, AfterViewInit {
                     image: '../../../assets/images/marvels/gamora.png'
                 },
                 {
-                    hero: 'master wong',
-                    image: '../../../assets/images/marvels/master-wong.png'
+                    hero: 'black panther',
+                    image: '../../../assets/images/marvels/black-panther.png'
                 },
                 {
                     hero: 'harley quinn',

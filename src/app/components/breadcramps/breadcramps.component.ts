@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-breadcramps',
@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
   styleUrl: './breadcramps.component.less'
 })
 export class BreadcrampsComponent {
+  @Input() number = 1;
   steps = [
     {
         number: 1,

@@ -36,6 +36,7 @@
         padding: 0 24px;
         width: calc(100vw - 48px);
     }
+
     background-color: @primary-black;
 
     height: 198px;
@@ -44,10 +45,12 @@
     flex-direction: column;
 
 }
+
 .title {
     color: @primary-white;
     font-family: @CINEMAX;
     text-transform: uppercase;
+
     @media (min-width: @md) {
         font-size: 40px;
     }
@@ -56,9 +59,11 @@
         font-size: 28px;
     }
 }
+
 .text {
     color: @primary-white;
     font-family: @Gilroy;
+
     @media (min-width: @md) {
         font-size: 24px;
     }
@@ -67,11 +72,14 @@
         font-size: 18px;
     }
 }
+
 .green-primary {
     color: @green-primary;
 }
+
 img.vel-logo {
     position: relative;
+
     @media (min-width: @md) {
         height: 51px;
         top: 12px;
@@ -82,6 +90,7 @@ img.vel-logo {
         top: 9px;
     }
 }
+
 .hero {
     font-family: @CINEMAX;
     color: @primary-black;
@@ -92,6 +101,7 @@ img.vel-logo {
     position: relative;
     left: 4px;
     padding-top: 40px;
+
     @media (min-width: @md) {
         font-size: 96px;
     }
@@ -122,4 +132,45 @@ swiper-slide img {
     max-height: 470px;
     height: 70vw;
     width: 100%;
+}
+
+// swiper-container {
+//     /* styles */
+// }
+
+// swiper-container::part(bullet) {
+//     /* styles */
+// }
+
+swiper-container::part(bullet-active) {
+    background-color: #b6ff00;
+    outline-offset: 1px;
+    outline-color: #b6ff00;
+    outline-style: solid;
+}
+
+// swiper-container::part(pagination) {
+//     /* styles */
+// }
+
+// swiper-container::part(container) {
+//     /* styles */
+// }
+
+swiper-container::part(button-prev) {
+    color: transparent;
+    background: url(../../../assets/images/arrows/arrow_left.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+swiper-container::part(button-next) {
+    color: transparent;
+    background: url(../../../assets/images/arrows/arrow_right.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
 }

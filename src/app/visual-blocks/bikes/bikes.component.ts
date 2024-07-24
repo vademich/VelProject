@@ -69,16 +69,10 @@ export class BikesComponent implements OnInit, AfterViewInit {
                 // loop: true,
                 slidesPerView: 1,
                 spaceBetween: 300,
+                navigation: true,
                 pagination: {
                     clickable: true
-                },
-                injectStyles: [
-                    `
-                    .swiper-pagination-bullet-active {
-                        outline: 6px double #b6ff00;
-                    }
-                  `,
-                ],
+                }
             };
 
             Object.assign(this.swiper1.nativeElement, swiperParams);

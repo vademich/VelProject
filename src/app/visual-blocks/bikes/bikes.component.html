@@ -6,7 +6,7 @@
 </div>
 
 <div class="page">
-    <swiper-container #swiper1 class="mySwiper" style="--swiper-pagination-color: #B6FF00;">
+    <swiper-container #swiper1 class="mySwiper">
         <swiper-slide *ngFor="let slide of slides">
             <div class="hero">{{slide.hero}}</div>
             <img [src]="slide.image" />

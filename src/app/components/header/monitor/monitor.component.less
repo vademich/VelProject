@@ -18,11 +18,8 @@ header {
     }
 
     @media (min-width: @max) {
-        width: calc(100vw - 144px*2);
-        padding: 0 144px;
-
-        max-width: 1152px;
-        padding: 0 calc((100vw - 1440px)/2 + 144px);
+        width: calc(@max - 144px);
+        padding: 0 calc((100vw - 1440px)/2 + 72px);
     }
 
     @media (min-width: (@lg)) {

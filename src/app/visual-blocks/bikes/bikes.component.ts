@@ -25,39 +25,39 @@ export class BikesComponent implements OnInit, AfterViewInit {
             this.slides = [
                 {
                     hero: 'master wong',
-                    image: '../../../assets/images/marvels/master-wong.png'
+                    image: '../../../assets/images/marvels/vel_03.png'
                 },
                 {
                     hero: 'captain marvel',
-                    image: '../../../assets/images/marvels/captain-marvel.png'
+                    image: '../../../assets/images/marvels/vel_06.png'
                 },
                 {
                     hero: 'groot',
-                    image: '../../../assets/images/marvels/groot.png'
+                    image: '../../../assets/images/marvels/vel_04.png'
                 },
                 {
                     hero: 'gamora',
-                    image: '../../../assets/images/marvels/gamora.png'
+                    image: '../../../assets/images/marvels/vel_07.png'
                 },
                 {
                     hero: 'black panther',
-                    image: '../../../assets/images/marvels/black-panther.png'
+                    image: '../../../assets/images/marvels/vel_02.png'
                 },
                 {
                     hero: 'harley quinn',
-                    image: '../../../assets/images/marvels/harley-quinn.png'
+                    image: '../../../assets/images/marvels/vel_09.png'
                 },
                 {
                     hero: 'hulk',
-                    image: '../../../assets/images/marvels/hulk.png'
+                    image: '../../../assets/images/marvels/vel_05.png'
                 },
                 {
                     hero: 'spider gwen',
-                    image: '../../../assets/images/marvels/spider-gwen.png'
+                    image: '../../../assets/images/marvels/vel_08.png'
                 },
                 {
                     hero: 'venom',
-                    image: '../../../assets/images/marvels/venom.png'
+                    image: '../../../assets/images/marvels/vel_01.png'
                 },
             ];
         });

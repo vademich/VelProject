@@ -1,4 +1,5 @@
 @import '../../styles/variables.less';
+@import '../../styles/typography.less';
 
 .page {
     overflow: clip;
@@ -104,10 +105,12 @@ img.vel-logo {
 
     @media (min-width: @md) {
         font-size: 96px;
+        height: 260px;
     }
 
     @media (max-width: (@md - 1px)) {
         font-size: 40px;
+        height: 132px;
     }
 }
 
@@ -129,7 +132,7 @@ swiper-slide {
 swiper-slide img {
     display: block;
     object-fit: contain;
-    object-position: bottom;
+    object-position: center;
     max-height: 470px;
     height: 70vw;
     width: 100%;

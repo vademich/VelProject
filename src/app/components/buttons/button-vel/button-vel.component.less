@@ -1,0 +1,49 @@
+@import '../../../styles/variables.less';
+
+.button-vel {
+    width: 228px;
+    height: 48px;
+    border: 1px solid @green-primary;
+
+    font-family: @Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    color: @green-primary;
+    text-transform: uppercase;
+    font-style: italic;
+
+    overflow: hidden;
+}
+
+.stripe {
+    width: 456px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(-228px);
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+}
+.stripe:hover {
+    transform: translateX(0);
+    background-color: @green-primary;
+}
+
+.text {
+    width: 228px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vel-icon {
+    width: 228px;
+    height: 48px;
+    background-color: @green-primary;
+    background-image: url(../../../../assets/images/icons/vel_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 54px 32px;
+}

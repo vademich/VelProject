@@ -3,14 +3,16 @@ import { ButtonType1Component } from "../buttons/button-type-1/button-type-1.com
 import { RouterLink } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { GreetingsComponent } from '../dialogs/greetings/greetings.component';
+import { ButtonVelComponent } from "../buttons/button-vel/button-vel.component";
 
 @Component({
     selector: 'app-footer',
     standalone: true,
     imports: [
-        ButtonType1Component,
-        RouterLink
-    ],
+    ButtonType1Component,
+    RouterLink,
+    ButtonVelComponent
+],
     templateUrl: './footer.component.html',
     styleUrl: './footer.component.less'
 })

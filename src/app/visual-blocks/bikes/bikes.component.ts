@@ -52,12 +52,16 @@ export class BikesComponent implements OnInit, AfterViewInit {
                     image: '../../../assets/images/marvels/vel_05.png'
                 },
                 {
-                    hero: 'spider gwen',
+                    hero: 'sue storm',
                     image: '../../../assets/images/marvels/vel_08.png'
                 },
                 {
                     hero: 'venom',
                     image: '../../../assets/images/marvels/vel_01.png'
+                },
+                {
+                    hero: 'spider gwen',
+                    image: '../../../assets/images/marvels/vel_10.png'
                 },
             ];
         });

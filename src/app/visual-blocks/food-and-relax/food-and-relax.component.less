@@ -15,8 +15,13 @@
     font-size: 40px;
     color: @green-primary;
     text-transform: uppercase;
+    text-wrap: balance;
 
     margin-top: 74px;
+    max-width: 500px;
+    @media (max-width: @sm) {
+        font-size: 28px;
+    }
 }
 
 .subtitle {
@@ -32,12 +37,12 @@
     font-family: @Gilroy;
     font-size: 20px;
     color: @primary-white;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .ps {
     font-family: @Gilroy;
-    font-size: 16px;
+    font-size: 20px;
     color: @primary-white;
     font-weight: 500;
 

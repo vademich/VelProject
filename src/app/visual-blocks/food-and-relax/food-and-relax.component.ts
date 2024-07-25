@@ -13,10 +13,8 @@ import { Component } from '@angular/core';
 export class FoodAndRelaxComponent {
   items = [
     'Музыка на открытом воздухе',
-    'Винно-сырная церемония',
     'Тематическая трапеза',
     'Чайная церемония',
-    'Кальянный сервис',
     'Mind and body'
 ]
 }

@@ -25,43 +25,43 @@ export class BikesComponent implements OnInit, AfterViewInit {
             this.slides = [
                 {
                     hero: 'master wong',
-                    image: '../../../assets/images/marvels/vel_03.png'
+                    image: '../../../assets/images/marvels/x2/vel_03_2x.webp'
                 },
                 {
                     hero: 'captain marvel',
-                    image: '../../../assets/images/marvels/vel_06.png'
+                    image: '../../../assets/images/marvels/x2/vel_06_2x.webp'
                 },
                 {
                     hero: 'groot',
-                    image: '../../../assets/images/marvels/vel_04.png'
+                    image: '../../../assets/images/marvels/x2/vel_04_2x.webp'
                 },
                 {
                     hero: 'gamora',
-                    image: '../../../assets/images/marvels/vel_07.png'
+                    image: '../../../assets/images/marvels/x2/vel_07_2x.webp'
                 },
                 {
                     hero: 'black panther',
-                    image: '../../../assets/images/marvels/vel_02.png'
+                    image: '../../../assets/images/marvels/x2/vel_02_2x.webp'
                 },
                 {
                     hero: 'harley quinn',
-                    image: '../../../assets/images/marvels/vel_09.png'
+                    image: '../../../assets/images/marvels/x2/vel_09_2x.webp'
                 },
                 {
                     hero: 'hulk',
-                    image: '../../../assets/images/marvels/vel_05.png'
+                    image: '../../../assets/images/marvels/x2/vel_05_2x.webp'
                 },
                 {
                     hero: 'sue storm',
-                    image: '../../../assets/images/marvels/vel_08.png'
+                    image: '../../../assets/images/marvels/x2/vel_08_2x.webp'
                 },
                 {
                     hero: 'venom',
-                    image: '../../../assets/images/marvels/vel_01.png'
+                    image: '../../../assets/images/marvels/x2/vel_01_2x.webp'
                 },
                 {
                     hero: 'spider gwen',
-                    image: '../../../assets/images/marvels/vel_10.png'
+                    image: '../../../assets/images/marvels/x2/vel_10_2x.webp'
                 },
             ];
         });

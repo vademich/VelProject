@@ -4,13 +4,11 @@
             <div class="block-info">
                 <div class="block-info-margin">
                     <div class="title-secondary primary-black">
-                        <span class="green-primary">ПУТЕШЕСТВУЙ</span>
-                        <span class="no-wrap"> С НАМИ!</span>
+                        <span class="green-primary">{{mainBlockTitle.green}}</span>
+                        <span class="no-wrap">{{mainBlockTitle.black}}</span>
                     </div>
                     <div class="text-secondary primary-black">
-                        Велосипед поможет Вам найти новые границы свободы
-                        и увидеть этот мир совершенно другими глазами.
-                        Начни свое путешествие прямо сейчас.
+                        {{mainBlockText}}
                     </div>
                     <app-button-type-1 [buttonText]="'GO!'" (mousedown)="openDialog()"></app-button-type-1>
                 </div>
@@ -21,14 +19,11 @@
             <div class="block-image block-image-bicycle"></div>
             <div class="block-text block-bg-white">
                 <div class="block-info-margin">
-                    <div class="block-title">Велосипеды</div>
+                    <div class="block-title">
+                        {{velBlockTitle}}
+                    </div>
                     <div class="block-text-text">
-                        У нас самый большой парк велосипедов
-                        и мы подберем для Вас самый лучший
-                        и подходящий велосипед. Ваш
-                        велодруг уже ждет Вас и хочет
-                        отправится вместе с Вами
-                        в прекрасное велопутешесвтие.
+                        {{velBlockText}}
                     </div>
                     <a href="#bicycles">
                         <app-arrow-details></app-arrow-details>
@@ -40,14 +35,11 @@
             <div class="block-image block-image-cyclist"></div>
             <div class="block-text block-bg-green">
                 <div class="block-info-margin">
-                    <div class="block-title">Велотур</div>
+                    <div class="block-title">
+                        {{tracksBlockTitle}}
+                    </div>
                     <div class="block-text-text">
-                        Наши Велогиды откроют для Вас
-                        более 10 прекрасных маршрутов
-                        по Черноземью. Это одни из лучших
-                        локаций нашего региона.
-                        Путешествуй с нами,
-                        путешествуй без границ.
+                        {{tracksBlockText}}
                     </div>
                     <app-arrow-details (mousedown)="openDialog()"></app-arrow-details>
                 </div>
@@ -62,13 +54,11 @@
             <div class="block-info">
                 <div class="block-info-margin">
                     <div class="title-secondary primary-black">
-                        <span class="green-primary">ПУТЕШЕСТВУЙ</span>
-                        <span class="no-wrap"> С НАМИ!</span>
+                        <span class="green-primary">{{mainBlockTitle.green}}</span>
+                        <span class="no-wrap">{{mainBlockTitle.black}}</span>
                     </div>
                     <div class="text-secondary primary-black">
-                        Велосипед поможет Вам найти новые границы свободы
-                        и увидеть этот мир совершенно другими глазами.
-                        Начни свое путешествие прямо сейчас.
+                        {{mainBlockText}}
                     </div>
                     <app-button-type-1 [buttonText]="'GO!'" (mousedown)="openDialog()"></app-button-type-1>
                 </div>
@@ -80,14 +70,11 @@
                 <div class="block-image block-image-bicycle"></div>
                 <div class="block-text block-bg-white">
                     <div class="block-info-margin">
-                        <div class="block-title">Велосипеды</div>
+                        <div class="block-title">
+                            {{velBlockTitle}}
+                        </div>
                         <div class="block-text-text">
-                            У нас самый большой парк велосипедов
-                            и мы подберем для Вас самый лучший
-                            и подходящий велосипед. Ваш
-                            велодруг уже ждет Вас и хочет
-                            отправится вместе с Вами
-                            в прекрасное велопутешесвтие.
+                            {{velBlockText}}
                         </div>
                         <a href="#bicycles">
                             <app-arrow-details></app-arrow-details>
@@ -99,14 +86,11 @@
                 <div class="block-image block-image-cyclist"></div>
                 <div class="block-text block-bg-green">
                     <div class="block-info-margin">
-                        <div class="block-title">Велотур</div>
+                        <div class="block-title">
+                            {{tracksBlockTitle}}
+                        </div>
                         <div class="block-text-text">
-                            Наши Велогиды откроют для Вас
-                            более 10 прекрасных маршрутов
-                            по Черноземью. Это одни из лучших
-                            локаций нашего региона.
-                            Путешествуй с нами,
-                            путешествуй без границ.
+                            {{tracksBlockText}}
                         </div>
                         <app-arrow-details (mousedown)="openDialog()"></app-arrow-details>
                     </div>

@@ -1,12 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, NgZone, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ButtonVelComponent } from "../../components/buttons/button-vel/button-vel.component";
 @Component({
     selector: 'app-bikes',
     standalone: true,
     imports: [
-        CommonModule
-    ],
+    CommonModule,
+    ButtonVelComponent
+],
     templateUrl: './bikes.component.html',
     styleUrl: './bikes.component.less',
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -25,43 +27,53 @@ export class BikesComponent implements OnInit, AfterViewInit {
             this.slides = [
                 {
                     hero: 'master wong',
-                    image: '../../../assets/images/marvels/x2/vel_03_2x.webp'
+                    webp: '../../../assets/images/marvels/x2/vel_03_2x.webp',
+                    png: '../../../assets/images/marvels/vel_03.png'
                 },
                 {
                     hero: 'captain marvel',
-                    image: '../../../assets/images/marvels/x2/vel_06_2x.webp'
+                    webp: '../../../assets/images/marvels/x2/vel_06_2x.webp',
+                    png: '../../../assets/images/marvels/vel_06.png'
                 },
                 {
                     hero: 'groot',
-                    image: '../../../assets/images/marvels/x2/vel_04_2x.webp'
+                    webp: '../../../assets/images/marvels/x2/vel_04_2x.webp',
+                    png: '../../../assets/images/marvels/vel_04.png'
                 },
                 {
                     hero: 'gamora',
-                    image: '../../../assets/images/marvels/x2/vel_07_2x.webp'
+                    webp: '../../../assets/images/marvels/x2/vel_07_2x.webp',
+                    png: '../../../assets/images/marvels/vel_07.png'
                 },
                 {
                     hero: 'black panther',
-                    image: '../../../assets/images/marvels/x2/vel_02_2x.webp'
+                    webp: '../../../assets/images/marvels/x2/vel_02_2x.webp',
+                    png: '../../../assets/images/marvels/vel_02.png'
                 },
                 {
                     hero: 'harley quinn',
-                    image: '../../../assets/images/marvels/x2/vel_09_2x.webp'
+                    webp: '../../../assets/images/marvels/x2/vel_09_2x.webp',
+                    png: '../../../assets/images/marvels/vel_09.png'
                 },
                 {
                     hero: 'hulk',
-                    image: '../../../assets/images/marvels/x2/vel_05_2x.webp'
+                    webp: '../../../assets/images/marvels/x2/vel_05_2x.webp',
+                    png: '../../../assets/images/marvels/vel_05.png'
                 },
                 {
                     hero: 'sue storm',
-                    image: '../../../assets/images/marvels/x2/vel_08_2x.webp'
+                    webp: '../../../assets/images/marvels/x2/vel_08_2x.webp',
+                    png: '../../../assets/images/marvels/vel_08.png'
                 },
                 {
                     hero: 'venom',
-                    image: '../../../assets/images/marvels/x2/vel_01_2x.webp'
+                    webp: '../../../assets/images/marvels/x2/vel_01_2x.webp',
+                    png: '../../../assets/images/marvels/vel_01.png'
                 },
                 {
                     hero: 'spider gwen',
-                    image: '../../../assets/images/marvels/x2/vel_10_2x.webp'
+                    webp: '../../../assets/images/marvels/x2/vel_10_2x.webp',
+                    png: '../../../assets/images/marvels/vel_10.png'
                 },
             ];
         });

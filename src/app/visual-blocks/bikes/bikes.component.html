@@ -1,5 +1,9 @@
 <div class="text-block">
-    <div class="title"><span class="green-primary">Выбери</span> свой <img src="../../../assets/images/vel-logo-white.svg" class="vel-logo"></div>
+    <div class="title">
+        <span class="green-primary">Выбери</span>
+        свой
+        <img src="../../../assets/images/vel-logo-white.svg" class="vel-logo">
+    </div>
     <div class="text">Cube - это одни из лучших велосипедов в мире.
         <br>Cube - это Ваш новый друг в велопутешествии.
     </div>
@@ -9,7 +13,8 @@
     <swiper-container #swiper1 class="mySwiper">
         <swiper-slide *ngFor="let slide of slides">
             <div class="hero">{{slide.hero}}</div>
-            <img [src]="slide.image" />
+            <img [src]="slide.webp" [alt]="slide.hero" class="webp" />
+            <img [src]="slide.png" [alt]="slide.hero" class="png" />
         </swiper-slide>
     </swiper-container>
 </div>

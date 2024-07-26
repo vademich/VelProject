@@ -130,12 +130,34 @@ swiper-slide {
 }
 
 swiper-slide img {
-    display: block;
     object-fit: contain;
     object-position: center;
     max-height: 470px;
     height: 70vw;
     width: 100%;
+}
+
+@supports (text-wrap: balance) {
+    // this CSS property doesn't supported by Safari 15, 
+    // and Safari 15 doesn't support .webp image format
+    // background-image: url(../../../assets/images/marvels/x2/vel_01_2x.webp);
+    .webp {
+        display: block;
+    }
+    .png {
+        display: none;
+    }
+}
+@supports (not (text-wrap: balance)) {
+    // this CSS property doesn't supported by Safari 15, 
+    // and Safari 15 doesn't support .webp image format
+    // background-image: url(../../../assets/images/marvels/x2/vel_01_2x.webp);
+    .webp {
+        display: none;
+    }
+    .png {
+        display: block;
+    }
 }
 
 // swiper-container {

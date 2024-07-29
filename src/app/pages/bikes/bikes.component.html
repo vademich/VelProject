@@ -1,1 +1,17 @@
-<p>bikes works!</p>
+<app-breadcramps [number]="2"></app-breadcramps>
+
+<div class="container">
+    <div class="card" *ngFor="let bike of bikes">
+        <div class="card__image">
+            <img [src]="bike.webp" [alt]="bike.hero" class="webp" />
+            <img [src]="bike.png" [alt]="bike.hero" class="png" />
+        </div>
+        <div class="card__meta">
+            <div class="card__title">{{bike.hero}}</div>
+            <div class="card__leftovers">Доступно: {{bike.leftovers}} шт</div>
+            <div class="button-vel">
+                    <div class="text">Забронировать</div>
+            </div>
+        </div>
+    </div>
+</div>

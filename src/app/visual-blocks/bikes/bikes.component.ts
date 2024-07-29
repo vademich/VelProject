@@ -2,12 +2,17 @@ import { CommonModule } from '@angular/common';
 import { AfterViewInit, CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, NgZone, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ButtonVelComponent } from "../../components/buttons/button-vel/button-vel.component";
+import { ButtonVelArrowComponent } from "../../components/buttons/button-vel-arrow/button-vel-arrow.component";
+import { RouterLink } from "@angular/router";
+
 @Component({
     selector: 'app-bikes',
     standalone: true,
     imports: [
     CommonModule,
-    ButtonVelComponent
+    ButtonVelComponent,
+    ButtonVelArrowComponent,
+    RouterLink
 ],
     templateUrl: './bikes.component.html',
     styleUrl: './bikes.component.less',

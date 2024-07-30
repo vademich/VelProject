@@ -1,0 +1,18 @@
+<div class="title">
+    {{title}}
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th scope="col">{{quantityHeader}}</th>
+            <th scope="col">{{costHeader}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of table">
+            <td>{{row.quantity}}</td>
+            <td>{{row.cost}}</td>
+        </tr>
+    </tbody>
+</table>

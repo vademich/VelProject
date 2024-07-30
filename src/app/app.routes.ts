@@ -10,7 +10,7 @@ import { BikeDetailsComponent } from './pages/bike-details/bike-details.componen
 import { TrackDetailsComponent } from './pages/track-details/track-details.component';
 import { TracksContainerComponent } from './pages/tracks/tracks-container/tracks-container.component';
 import { FreeRideComponent } from './pages/tracks/free-ride/free-ride.component';
-import { AdditiveServiceComponent } from './components/pages/additive-service/additive-service.component';
+import { AdditiveServiceComponent } from './pages/additive-service/additive-service.component';
 
 export const routes: Routes = [
     { path: "", component: LandingComponent },

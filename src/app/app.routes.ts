@@ -8,15 +8,33 @@ import { DeliveryComponent } from './pages/delivery/delivery.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { BikeDetailsComponent } from './pages/bike-details/bike-details.component';
 import { TrackDetailsComponent } from './pages/track-details/track-details.component';
+import { TracksContainerComponent } from './pages/tracks/tracks-container/tracks-container.component';
+import { FreeRideComponent } from './pages/tracks/free-ride/free-ride.component';
 
 export const routes: Routes = [
     { path: "", component: LandingComponent },
-    { path: "tracks", component: TracksComponent },
-    { path: "trackId", component: TrackDetailsComponent },
+    // { path: "tracks", component: TracksComponent },
+    { path: "tracks", component: TracksContainerComponent },
+    { path: "tracks/free-ride", component: FreeRideComponent },
+    // {
+    //     path: "tracks",
+    //     component: TracksContainerComponent,
+    //     outlet: 'tracking'
+    // },
+    // {
+    //     path: "free-ride",
+    //     component: FreeRideComponent,
+    //     outlet: 'tracking'
+    // },
+
+
+    // { path: "trackId", component: TrackDetailsComponent },
     // { path: "track/:id", component: TrackDetailsComponent },
-    { path: "bikes", component: BikesComponent },
-    { path: "bikeId", component: BikeDetailsComponent },
-    // { path: "bike/:id", component: BikeDetailsComponent },
+    {
+        path: "bikes",
+        component: BikesComponent,
+        children: [{ path: ":id", component: BikeDetailsComponent }]
+    },
     { path: "bike-equip", component: BikeEquipComponent },
     { path: "body-equip", component: BodyEquipComponent },
     { path: "delivery", component: DeliveryComponent },

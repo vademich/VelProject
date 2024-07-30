@@ -1,38 +1,26 @@
 @import '../../styles/variables.less';
-@dust: #D5D7DD;
 
 .breadcramps {
+    margin-top: 106px;
     display: flex;
-    justify-content: space-between;
-
-    font-family: @Gilroy;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
 }
 
-.step {
-    color: @dust;
-    display: flex;
-    align-items: center;
+.arrow_breadcramps {
+    width: 12px;
+    height: 15px;
+    background-image: url(../../../assets/images/arrows/arrow_breadcramps.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-    :nth-child(1) {
-        margin-right: 8px;
-    }
+    margin: 0 12px;
 }
 
-.step:not(:nth-child(5)) {
-    margin-right: 40px;
+a {
+    color: @primary-white;
 }
 
-.number {
-    width: 32px;
-    height: 32px;
-    border-radius: 32px;
-    background-color: @dust;
-
-    color: @primary-black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+a:hover,
+a.a__active {
+    color: @green-primary;
 }

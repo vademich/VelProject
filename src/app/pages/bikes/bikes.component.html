@@ -1,17 +1,35 @@
-<app-breadcramps [number]="2"></app-breadcramps>
+<app-header></app-header>
 
-<div class="container">
-    <div class="card" *ngFor="let bike of bikes">
-        <div class="card__image">
-            <img [src]="bike.webp" [alt]="bike.hero" class="webp" />
-            <img [src]="bike.png" [alt]="bike.hero" class="png" />
-        </div>
-        <div class="card__meta">
-            <div class="card__title">{{bike.hero}}</div>
-            <div class="card__leftovers">Доступно: {{bike.leftovers}} шт</div>
-            <div class="button-vel">
-                    <div class="text">Забронировать</div>
+<div class="page">
+
+    <app-breadcramps [label]="'Велосипеды на прокат'"></app-breadcramps>
+
+    <!-- <app-milestones [number]="2"></app-milestones> -->
+
+    <!-- <p class="title">выбери свой vel</p> -->
+
+    <div class="filter">
+        <button id="all" class="filter__all filter__active" (mousedown)="switch('all')">Все</button>
+        <button id="male" class="filter__male" (mousedown)="switch('male')">Мужские</button>
+        <button id="female" class="filter__female" (mousedown)="switch('female')">Женские</button>
+    </div>
+
+    <div class="container">
+        <div class="card" *ngFor="let bike of bikes">
+            <div class="card__image">
+                <img [src]="bike.webp" [alt]="bike.hero" class="webp" />
+                <img [src]="bike.png" [alt]="bike.hero" class="png" />
+            </div>
+            <div class="card__meta">
+                <div class="card__title">{{bike.hero}}</div>
+                <div class="card__price">{{bike.price}} ₽/час</div>
+                <!-- <div class="card__leftovers">Доступно: {{bike.leftovers}} шт</div> -->
+                <div class="button-vel">
+                    <div class="text" (mousedown)="openDialog()">Заказать</div>
+                    <!-- <div class="text">Забронировать</div> -->
+                </div>
             </div>
         </div>
     </div>
+
 </div>

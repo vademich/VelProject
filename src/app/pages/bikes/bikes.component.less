@@ -1,36 +1,149 @@
 @import '../../styles/variables.less';
 
+@media screen {
+
+    // switchtab
+    .tab-holder {
+        display: flex;
+        padding: 4px;
+        height: 45px;
+
+        background-color: #4C4C4C;
+        max-width: 1297px;
+        margin-bottom: 24px;
+    }
+
+    .tab {
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        height: 100%;
+        font-family: @Gilroy;
+        font-size: 20px;
+        font-weight: 500;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: transparent;
+        color: @primary-white;
+    }
+
+    .tab-active {
+        background-color: @green-primary;
+        color: @primary-black;
+    }
+}
+
+@media screen {
+
+    // button
+    .button-vel {
+        width: 100%;
+        height: 48px;
+        border: 1px solid @green-primary;
+
+        font-family: @Gilroy;
+        font-size: 18px;
+        font-weight: 700;
+        color: @green-primary;
+        text-transform: uppercase;
+        font-style: italic;
+
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+
+    .button-vel:hover {
+        background-color: @green-primary;
+        color: @primary-black;
+    }
+
+    .text {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @supports (text-wrap: balance) {
     .webp {
         display: block;
     }
+
     .png {
         display: none;
     }
 }
+
 @supports (not (text-wrap: balance)) {
     .webp {
         display: none;
     }
+
     .png {
         display: block;
+    }
+}
+
+p.title {
+    font-family: @CINEMAX;
+    font-size: 32px;
+    color: @primary-white;
+    text-transform: uppercase;
+
+    margin-top: 78px;
+    margin-bottom: 32px;
+}
+
+.page {
+    overflow: clip;
+    margin: 0 auto;
+    margin-top: 104px;
+    max-width: calc(1440px - 2*72px);
+
+    @media (min-width: @md) {
+        padding: 0 72px;
+        padding-bottom: 74px;
+        width: calc(100vw - 144px);
+    }
+
+    @media (max-width: (@md - 1px)) {
+        padding: 0 24px;
+        padding-bottom: 28px;
+        width: calc(100vw - 48px);
     }
 }
 
 .container {
     max-width: 1329px;
-    display: flex;
-    flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @media (max-width: (@md - 1px)) {
+        grid-template-columns: 1fr;
+    }
+
+    @media (min-width: @md) and (max-width: 1127px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 .card {
-    width: 360px;
-    margin: 12px;
     background-color: #4C4C4C;
 
-    flex-grow: 0.5;
     @media (min-width: 1152px) {
         max-width: 419px;
+    }
+
+    @media (max-width: (@md - 1px)) {
+        margin-right: 0px;
     }
 }
 
@@ -40,8 +153,10 @@
     padding-top: 48px;
 }
 
-.card__image > img {
+.card__image>img {
     width: 100%;
+    height: 280px;
+    object-fit: contain;
 }
 
 .card__meta {
@@ -55,12 +170,25 @@
     color: @primary-white;
 
     margin-bottom: 10px;
+    min-height: 64px;
 }
+
+.card__price {
+    font-family: @Gilroy;
+    font-size: 24px;
+    font-weight: 700;
+    color: @primary-white;
+    text-transform: uppercase;
+
+    // margin-top: 32px;
+    margin-bottom: 16px;
+}
+
 .card__leftovers {
     font-family: @Gilroy;
     font-size: 18px;
     color: @green-primary;
-    
+
     margin-bottom: 32px;
 }
 
@@ -79,6 +207,7 @@
     overflow: hidden;
     transition: all 0.5s ease;
 }
+
 .button-vel:hover {
     background-color: @green-primary;
     color: @primary-black;
@@ -90,4 +219,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.filter {
+    margin: 24px 0;
+    display: flex;
+}
+
+.filter__all,
+.filter__male,
+.filter__female {
+    padding: 16px;
+    margin-right: 16px;
+    background-color: #F5F6FB;
+
+    font-family: @Gilroy;
+    font-size: 16px;
+    font-weight: 600;
+    color: @primary-black;
+    text-transform: uppercase;
+
+    transition: all 0.5s ease;
+}
+
+.filter__all:hover,
+.filter__male:hover,
+.filter__female:hover {
+    background-color: @green-primary;
+}
+
+.filter__active {
+    background-color: @green-primary;
 }

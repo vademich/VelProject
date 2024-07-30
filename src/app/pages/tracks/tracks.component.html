@@ -1,3 +1,17 @@
-<app-breadcramps [number]="1"></app-breadcramps>
+<app-milestones [number]="1"></app-milestones>
+
 <p class="title">где вы хотите покататься?</p>
-<app-switchtab></app-switchtab>
+
+<!-- <div class="tab-holder">
+    <button id="tracks" class="tab tab-active" (mousedown)="switch('tracks')"
+        [routerLink]="['', { outlets: { tracking: ['tracks'] } }]">Треки</button>
+    <button id="freeride" class="tab" (mousedown)="switch('freeride')"
+        [routerLink]="['', { outlets: { tracking: ['free-ride'] } }]">Свободный заезд</button>
+</div>
+<router-outlet name="tracking"></router-outlet> -->
+
+<div class="tab-holder">
+    <button id="tracks" class="tab tab-active" (mousedown)="switch('tracks')" [routerLink]="'tracks'">Треки</button>
+    <button id="freeride" class="tab" (mousedown)="switch('freeride')" [routerLink]="'free-ride'">Свободный
+        заезд</button>
+</div>

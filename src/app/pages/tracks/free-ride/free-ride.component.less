@@ -1,12 +1,14 @@
-@import '../../styles/variables.less';
+@import '../../../styles/variables.less';
 
 @media screen {
+    // switchtab
     .tab-holder {
         display: flex;
         padding: 4px;
         height: 45px;
 
         background-color: #4C4C4C;
+        max-width: 1297px;
     }
 
     .tab {
@@ -32,9 +34,12 @@
     }
 }
 
-.title {
+p.title {
     font-family: @CINEMAX;
     font-size: 32px;
     color: @primary-white;
     text-transform: uppercase;
+
+    margin-top: 78px;
+    margin-bottom: 32px;
 }

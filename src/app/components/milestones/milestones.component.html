@@ -1,0 +1,9 @@
+<div class="milestones">
+    <div class="step" *ngFor="let step of steps">
+            <div *ngIf="step.number <= number" class="number" style="background-color: #B6FF00;">{{step.number}}</div>
+            <div *ngIf="step.number <= number" class="text" style="color: #B6FF00;">{{step.text}}</div>
+
+            <div *ngIf="step.number > number" class="number">{{step.number}}</div>
+            <div *ngIf="step.number > number" class="text">{{step.text}}</div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<div class="page">
+    <app-milestones [number]="1"></app-milestones>
+
+    <p class="title">где вы хотите покататься?</p>
+
+    <div class="tab-holder">
+        <button id="tracks" class="tab tab-active" (mousedown)="switch('tracks')">Треки</button>
+        <button id="freeride" class="tab" (mousedown)="switch('freeride')" [routerLink]="'free-ride'">Свободный
+            заезд</button>
+    </div>
+
+    <div class="container">
+        <div class="card" *ngFor="let track of tracks">
+            <div class="card__image">
+                <img [src]="track.svg" [alt]="track.name" />
+            </div>
+            <div class="card__meta">
+                <div class="card__title">{{track.name}}</div>
+                <div class="card__address">{{track.address}}</div>
+                <div class="additive-info">
+                    <div class="card__distance">{{track.distance}}</div>
+                    <div class="card__duration">{{track.duration}}</div>
+                    <div class="card__team">{{track.team}}</div>
+                </div>
+                <div class="button-vel">
+                    <div class="text">Подробнее</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

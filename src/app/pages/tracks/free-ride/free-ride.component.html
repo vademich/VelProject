@@ -1,0 +1,8 @@
+<app-milestones [number]="1"></app-milestones>
+
+<p class="title">где вы хотите покататься?</p>
+
+<div class="tab-holder">
+    <button id="tracks" class="tab" (mousedown)="switch('tracks')" [routerLink]="'../../tracks'">Треки</button>
+    <button id="freeride" class="tab tab-active" (mousedown)="switch('freeride')">Свободный заезд</button>
+</div>

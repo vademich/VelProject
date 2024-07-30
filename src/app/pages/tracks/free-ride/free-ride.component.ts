@@ -1,21 +1,20 @@
 import { Component } from '@angular/core';
-import { BreadcrampsComponent } from "../../components/breadcramps/breadcramps.component";
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { MilestonesComponent } from "../../components/milestones/milestones.component";
+import { RouterLink } from '@angular/router';
+import { BreadcrampsComponent } from '../../../components/breadcramps/breadcramps.component';
+import { MilestonesComponent } from "../../../components/milestones/milestones.component";
 
 @Component({
-    selector: 'app-tracks',
+    selector: 'app-free-ride',
     standalone: true,
     imports: [
-    BreadcrampsComponent,
-    RouterOutlet,
     RouterLink,
+    BreadcrampsComponent,
     MilestonesComponent
 ],
-    templateUrl: './tracks.component.html',
-    styleUrl: './tracks.component.less'
+    templateUrl: './free-ride.component.html',
+    styleUrl: './free-ride.component.less'
 })
-export class TracksComponent {
+export class FreeRideComponent {
     switch(tab: string) {
         document.getElementById(tab)?.classList.add('tab-active');
 
@@ -26,4 +25,5 @@ export class TracksComponent {
             document.getElementById('tracks')?.classList.remove('tab-active');
         }
     }
+
 }

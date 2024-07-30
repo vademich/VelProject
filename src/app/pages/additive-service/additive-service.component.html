@@ -1,1 +1,22 @@
-<p>additive-service works!</p>
+<app-header></app-header>
+
+<div class="page">
+
+    <app-breadcramps [label]="'Дополнительные услуги'"></app-breadcramps>
+
+    <div class="container">
+        <div class="card" *ngFor="let elem of list">
+            <div class="card__image">
+                <img [src]="elem.webp" [alt]="elem.name" class="webp" />
+                <img [src]="elem.png" [alt]="elem.name" class="png" />
+            </div>
+            <div class="card__meta">
+                <div class="card__title">{{elem.name}}</div>
+                <div class="button-vel">
+                    <div class="text" (mousedown)="openDialog()">Прайс</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

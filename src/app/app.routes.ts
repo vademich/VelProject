@@ -10,26 +10,13 @@ import { BikeDetailsComponent } from './pages/bike-details/bike-details.componen
 import { TrackDetailsComponent } from './pages/track-details/track-details.component';
 import { TracksContainerComponent } from './pages/tracks/tracks-container/tracks-container.component';
 import { FreeRideComponent } from './pages/tracks/free-ride/free-ride.component';
+import { AdditiveServiceComponent } from './components/pages/additive-service/additive-service.component';
 
 export const routes: Routes = [
     { path: "", component: LandingComponent },
-    // { path: "tracks", component: TracksComponent },
+    { path: "additive-service", component: AdditiveServiceComponent },
     { path: "tracks", component: TracksContainerComponent },
     { path: "tracks/free-ride", component: FreeRideComponent },
-    // {
-    //     path: "tracks",
-    //     component: TracksContainerComponent,
-    //     outlet: 'tracking'
-    // },
-    // {
-    //     path: "free-ride",
-    //     component: FreeRideComponent,
-    //     outlet: 'tracking'
-    // },
-
-
-    // { path: "trackId", component: TrackDetailsComponent },
-    // { path: "track/:id", component: TrackDetailsComponent },
     {
         path: "bikes",
         component: BikesComponent,

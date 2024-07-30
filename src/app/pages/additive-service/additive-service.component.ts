@@ -49,7 +49,7 @@ export class AdditiveServiceComponent {
           // name: 'Музыка на открытом воздухе',
           name: 'Музыка на природе',
           webp: '../../../assets/images/additive-service/webp_2x/violin.webp',
-          png: '../../../assets/images/additive-service/jpg/vel_09-1.jpg'
+          png: '../../../assets/images/additive-service/jpg/violin.jpg'
       },
       {
           name: 'Кальянный сервис',

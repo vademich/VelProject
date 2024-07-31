@@ -1,18 +1,20 @@
-<div class="title">
-    {{data.title}}
-</div>
+<mat-card>
+    <div class="title">
+        {{data.title}}
+    </div>
 
-<table>
-    <thead>
-        <tr>
-            <th scope="col">{{data.quantityHeader}}</th>
-            <th scope="col">{{data.costHeader}}</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let row of data.table">
-            <td>{{row.quantity}}</td>
-            <td>{{row.cost}}</td>
-        </tr>
-    </tbody>
-</table>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">{{data.quantityHeader}}</th>
+                <th scope="col">{{data.costHeader}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of data.table">
+                <td>{{row.quantity}}</td>
+                <td>{{row.cost}}</td>
+            </tr>
+        </tbody>
+    </table>
+</mat-card>

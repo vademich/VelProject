@@ -13,7 +13,55 @@ mat-card {
     font-size: 24px;
     color: @primary-white;
     text-transform: uppercase;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+.close-btn {
+    position: relative;
+    display: inline-block;
+    font-family: @Gilroy;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    background-color: @green-primary;
+    color: @primary-black;
+    cursor: pointer;
+    padding: 11px 59px;
+    overflow: clip;
+}
+
+.close-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5em;
+    height: 100%;
+    background-color: rgba(#fff, 0.6);
+    transform: translateX(-4em) skewX(-45deg);
+
+    // transition: 0.5s;
+}
+
+.close-btn:hover::before {
+    // transform: translateX(14em) skewX(-45deg);
+    animation: move-light 0.5s linear;
+}
+
+@keyframes move-light {
+    from {
+        transform: translateX(-4em) skewX(-45deg);
+    }
+    to {
+        transform: translateX(14em) skewX(-45deg);
+    }
+}
+
 
 table {
     margin: 40px 32px;

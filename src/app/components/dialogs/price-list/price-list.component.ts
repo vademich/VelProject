@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogClose } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 
 @Component({
@@ -8,7 +8,8 @@ import { MatCardModule } from '@angular/material/card';
     standalone: true,
     imports: [
         CommonModule,
-        MatCardModule
+        MatCardModule,
+        MatDialogClose
     ],
     templateUrl: './price-list.component.html',
     styleUrl: './price-list.component.less'

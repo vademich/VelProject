@@ -13,8 +13,8 @@
     <swiper-container #swiper1 class="mySwiper">
         <swiper-slide *ngFor="let slide of slides">
             <div class="hero">{{slide.hero}}</div>
-            <img [src]="slide.webp" [alt]="slide.hero" class="webp" />
-            <img [src]="slide.png" [alt]="slide.hero" class="png" />
+            <img [src]="slide.webp" [alt]="slide.hero" class="webp" loading="lazy" />
+            <img [src]="slide.png" [alt]="slide.hero" class="png" loading="lazy" />
         </swiper-slide>
     </swiper-container>
     <app-button-vel-arrow [buttonText]="'Смотреть все'" routerLink="/bikes"></app-button-vel-arrow>

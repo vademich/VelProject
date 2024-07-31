@@ -1,24 +1,20 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-price-list',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './price-list.component.html',
-  styleUrl: './price-list.component.less'
+    selector: 'app-price-list',
+    standalone: true,
+    imports: [
+        CommonModule
+    ],
+    templateUrl: './price-list.component.html',
+    styleUrl: './price-list.component.less'
 })
 export class PriceListComponent {
-    @Input() title = 'Услуга';
-    @Input() quantityHeader = 'Количество';
-    @Input() costHeader = 'Цена за услугу';
 
-    @Input() table = [
-        {
-            quantity: 0,
-            cost: 0
-        }
-    ]
+    constructor(
+        @Inject(MAT_DIALOG_DATA) public data: any
+    ) { }
+
 }

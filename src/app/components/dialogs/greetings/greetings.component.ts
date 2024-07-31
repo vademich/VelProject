@@ -13,26 +13,22 @@ import axios from 'axios';
 import { environment } from '../../../../environments/environment';
 import { CommonModule } from '@angular/common';
 import { ButtonType1Component } from '../../buttons/button-type-1/button-type-1.component';
-// 
+
 @Component({
     selector: 'app-greetings',
     standalone: true,
     imports: [
-    FormsModule,
-    MatDialogModule,
-    // MatInputModule,
-    // MatFormFieldModule,
-    // MatButtonModule,
-    ContactFormComponent,
-    // 
-    RecaptchaModule,
-    RecaptchaFormsModule,
-    ToastrModule,
-    FormsModule,
-    ReactiveFormsModule,
-    CommonModule,
-    ButtonType1Component
-],
+        FormsModule,
+        MatDialogModule,
+        ContactFormComponent,
+        RecaptchaModule,
+        RecaptchaFormsModule,
+        ToastrModule,
+        FormsModule,
+        ReactiveFormsModule,
+        CommonModule,
+        ButtonType1Component
+    ],
     templateUrl: './greetings.component.html',
     styleUrl: './greetings.component.less',
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -47,25 +43,15 @@ import { ButtonType1Component } from '../../buttons/button-type-1/button-type-1.
 })
 export class GreetingsComponent {
 
+    title = `Мы приветствуем Вас!`;
+    text = `Для начала Вашего велопутешествия,
+    оставьте, пожалуйста, заявку или свяжитесь
+    с нами по телефону `;
+
     constructor(
         private toastrService: ToastrService
     ) {
         this.token = undefined;
-    }
-    public showSuccess(text: string): void {
-        this.toastrService.success(text, 'Успешно');
-    }
-
-    public showInfo(text: string, title: string): void {
-        this.toastrService.info(text, title);
-    }
-
-    public showWarning(text: string): void {
-        this.toastrService.warning(text, 'Предупреждение!');
-    }
-
-    public showError(text: string): void {
-        this.toastrService.error(text, 'Ошибка!');
     }
 
     token: string | undefined;
@@ -85,13 +71,13 @@ export class GreetingsComponent {
                 "token": this.token
             };
             axios.post(url, user)
-                .then(() => { this.showSuccess('Ваше сообщение доставлено!'); })
-                .catch(() => { this.showError('Ошибка в отправке сообщения.'); })
+                .then(() => { this.toastrService.success('Ваше сообщение доставлено!', 'Успешно'); })
+                .catch(() => { this.toastrService.error('Ошибка в отправке сообщения.', 'Ошибка!'); })
 
         } else if (!(form.form.value.name && form.form.value.tel)) {
-            this.showWarning('Заполните пустые поля!');
+            this.toastrService.warning('Заполните пустые поля!', 'Предупреждение!');
         } else if (form.form.value.token == undefined) {
-            this.showWarning('Подтвердите, что Вы не робот.');
+            this.toastrService.warning('Подтвердите, что Вы не робот.', 'Предупреждение!');
         }
     }
 }

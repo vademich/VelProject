@@ -35,6 +35,7 @@ export class AdditiveServiceComponent {
             png: '../../../assets/images/additive-service/jpg/vel_01.jpg',
             quantityHeader: 'Количество человек',
             costHeader: 'Стоимость за услугу',
+            price: 'от 14 000 ₽',
             table: [
                 {
                     quantity: 'от 1 до 8',
@@ -56,6 +57,7 @@ export class AdditiveServiceComponent {
             png: '../../../assets/images/additive-service/jpg/vel_05.jpg',
             quantityHeader: 'Количество',
             costHeader: 'Цена за услугу',
+            price: 'от 14 000 ₽',
             table: [
                 {
                     quantity: 0,
@@ -69,6 +71,7 @@ export class AdditiveServiceComponent {
             png: '../../../assets/images/additive-service/jpg/vel_03.jpg',
             quantityHeader: 'Количество',
             costHeader: 'Цена за услугу',
+            price: 'от 16 000 ₽',
             table: [
                 {
                     quantity: 0,
@@ -82,6 +85,7 @@ export class AdditiveServiceComponent {
             png: '../../../assets/images/additive-service/jpg/vel_07.jpg',
             quantityHeader: 'Количество',
             costHeader: 'Цена за услугу',
+            price: 'от 8 000 ₽',
             table: [
                 {
                     quantity: 0,
@@ -95,6 +99,7 @@ export class AdditiveServiceComponent {
             png: '../../../assets/images/additive-service/jpg/violin.jpg',
             quantityHeader: 'Количество',
             costHeader: 'Цена за услугу',
+            price: 'от 18 000 ₽',
             table: [
                 {
                     quantity: 0,
@@ -108,6 +113,7 @@ export class AdditiveServiceComponent {
             png: '../../../assets/images/additive-service/jpg/vel_09.jpg',
             quantityHeader: 'Количество кальянов',
             costHeader: 'Стоимость',
+            price: 'от 10 000 ₽',
             table: [
                 {
                     quantity: '1',

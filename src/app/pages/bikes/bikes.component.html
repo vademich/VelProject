@@ -17,8 +17,8 @@
     <div class="container">
         <div class="card" *ngFor="let bike of bikes">
             <div class="card__image">
-                <img [src]="bike.webp" [alt]="bike.hero" class="webp" />
-                <img [src]="bike.png" [alt]="bike.hero" class="png" />
+                <img [src]="bike.webp" [alt]="bike.hero" class="webp" loading="lazy" />
+                <img [src]="bike.png" [alt]="bike.hero" class="png" loading="lazy" />
             </div>
             <div class="card__meta">
                 <div class="card__title">{{bike.hero}}</div>
